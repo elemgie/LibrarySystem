@@ -2,7 +2,6 @@ package library;
 
 import java.io.*;
 
-
 public class Database{
   ReaderBase readers;
   Bookset books;
@@ -15,7 +14,19 @@ public class Database{
     return books;
   }
   
-  public String writeData(){
+  public Database(){
+    readData();
+    if(readers == null){
+      //System.out.println("coś nie ten");
+      readers = new ReaderBase();
+    }
+    if(books == null){
+      //System.out.println("coś nie ten ale z książkami");
+      books = new Bookset();
+    }
+  }
+
+  public void writeData(){
     try{
       ObjectOutputStream readersOut = new ObjectOutputStream(new FileOutputStream("readers.ser"));
       readersOut.writeObject(readers);
@@ -23,13 +34,13 @@ public class Database{
       ObjectOutputStream booksOut = new ObjectOutputStream(new FileOutputStream("books.ser"));
       booksOut.writeObject(books);
       booksOut.close();
-      return "Database saved without interruption.";
+      System.out.println("Database saved without interruption.");
     }
     catch(IOException e){
-      return "Problem with saving occured. Check integrity of database.";
+      System.out.println("Problem with saving occured. Check integrity of database.");
     }
   }
-  public String readData(){
+  public void readData(){
     try{
       ObjectInputStream readersIn = new ObjectInputStream(new FileInputStream("readers.ser"));
       readers = (ReaderBase)readersIn.readObject();
@@ -37,10 +48,10 @@ public class Database{
       ObjectInputStream booksIn = new ObjectInputStream(new FileInputStream("books.ser"));
       books = (Bookset)booksIn.readObject();
       booksIn.close();
-      return "Database read successfully.";
+      System.out.println("Database read successfully.");
     }
     catch(Exception e){
-      return "Database loading failed. Check database files and restart the program.";
+      System.out.println("Database loading failed. Check database files.");
     }
   }
 }
