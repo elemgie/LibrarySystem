@@ -5,22 +5,24 @@ import java.time.LocalDate;
 import java.io.Serializable;
 import library.Bookset.*;
 
-///Exception informing that issued book is already rented by someone
+/** Exception informing that issued book is already rented by someone */
  class CurrentlyRentedException extends Exception{
   public CurrentlyRentedException(){}
 }
 
-///Exception informing that reader has already rented maximal agreed number of books
+/** Exception informing that reader has already rented maximal agreed number of books */
 class RentCapacityAchieved extends Exception{
   public RentCapacityAchieved(){}
 }
 
-///Exception informing that issued book is not rented by specified person
+/** Exception informing that issued book is not rented by specified person */
 class BookNotRented extends Exception{
   public BookNotRented(){}
 }
 
+/** Redaers' database */
 public class ReaderBase implements Serializable{
+  /** Instance of rent of a book */
   public class Rent implements Serializable{
     Book rentedBook;
     LocalDate dateOfRent;
@@ -70,7 +72,6 @@ public class ReaderBase implements Serializable{
       return this.id;
     }
 
-    /** Setter for reader's name */
     public void setName(String name){
       this.name = name;
     }
@@ -94,16 +95,15 @@ public class ReaderBase implements Serializable{
       return this.currentRents.size();
     }
 
-    /** Setter for reader's surname */
     public void setSurname(String surname){
       this.surname = surname;
     }
 
-    /** Setter for reader's phoneNumber */
     public void setPhoneNumber(int phoneNumber){
       this.phoneNumber = phoneNumber;
     }
 
+    /** Does a lookup through specified reader's rents in order to find there specific book */
     public Rent findBookInRents(Book book) throws BookNotRented{
       for(Rent r: currentRents){
         System.out.println(r.rentedBook.getTitle());
@@ -126,7 +126,7 @@ public class ReaderBase implements Serializable{
       bookToRent.setRent(act);
     }
 
-    /**Ends rent and enables the book to be rent */
+    /** Ends rent and enables the book to be rent */
     public void returnBook(Book returnedBook) throws BookNotRented{
       Rent finishedRent;
       try{
@@ -147,6 +147,7 @@ public class ReaderBase implements Serializable{
     readerSet = new ArrayList<Reader>();
   }
 
+  /** Allows to add a reader into the database */
   public void addReader(String name, String surname, int phoneNumber){
     readerSet.add(new Reader(readerSet.size() + 1, name, surname, phoneNumber));
   }
@@ -178,6 +179,7 @@ public class ReaderBase implements Serializable{
     return this.readerSet.size();
   }
 
+  /** Returns reader specified by an ID (counting from 1) */
   public Reader getReader(int id){
     return this.readerSet.get(id - 1);
   }

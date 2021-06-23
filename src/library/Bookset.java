@@ -4,7 +4,9 @@ import java.util.*;
 
 import library.ReaderBase.*;
 
+/** Represent books' database */
 public class Bookset implements Serializable {
+  /** Instance of the book in bookset */
   public class Book implements Serializable{
     private int id;
     private String title;
@@ -67,12 +69,13 @@ public class Bookset implements Serializable {
       this.publicationYear = publicationYear;
       this.value = value;
     }
-
+    
+    /** Sets reference to current rent instance in book's entry */
     public void setRent(Rent actRent){
       this.actRent = actRent;
     }
 
-    ///Gives information whether the book is available to be rent \equiv no one has it borrowed
+    /** Gives information whether the book is available to be rent \equiv no one has it borrowed */
     public boolean isAvailableToRent(){
       return actRent == null && isInBookset;
     }
@@ -101,8 +104,10 @@ public class Bookset implements Serializable {
     return set.size();
   }
 
-  ///Disables book's ability to be rented
-  ///@warning Doesn't remove book's data from database
+  /** Disables book's ability to be rented
+   * @see removeBook()
+   * Decrements number of active books in bookset leaving books' positions in database intact
+  @warning Doesn't remove book's data from database */
   public void removeFromBookset(int id) throws CurrentlyRentedException{
     Book tmp;    
     try{

@@ -2,18 +2,22 @@ package library;
 
 import java.io.*;
 
+/** Database for the whole project */
 public class Database{
   ReaderBase readers;
   Bookset books;
 
+  /** Returns readers' database */
   public ReaderBase getReaders(){
     return readers;
   }
 
+  /** Returns books' database */
   public Bookset getBooks(){
     return books;
   }
   
+  /** Simple constructor */
   public Database(){
     readData();
     if(readers == null)
@@ -22,6 +26,10 @@ public class Database{
       books = new Bookset();
   }
 
+  /** Enables to write database on the disk.
+   * Currently uses serialization mechanism.
+   * Stored in 'data' subdirectory.
+   */
   public void writeData(){
     try{
       ObjectOutputStream readersOut = new ObjectOutputStream(new FileOutputStream("data/readers.ser"));
@@ -36,6 +44,10 @@ public class Database{
       System.out.println("Problem with saving occured. Check integrity of database.");
     }
   }
+
+  /** Enables to read stored database.
+   *  Currently uses serialization mechanism.
+   */
   public void readData(){
     try{
       ObjectInputStream readersIn = new ObjectInputStream(new FileInputStream("data/readers.ser"));
