@@ -44,6 +44,7 @@ Tak jak dla czytelników otrzymujemy filtrowalną tabelę osób, które zalegaj�
 ## Specyfikacja programistyczna
 
 Dokumentację wygenerować programem Doxygen przy użyciu polecenia `doxygen Doxyfile` w katalogu głównym. W katalogu doc dostarczono wersję PDF oraz HTML, podstawowe wersje znajdują się w katalogu głównym. GUI nie posiada rozbudowanej dokumentacji, gdyż jest realizacją interfejsu dla dostarczonego API bazy danych. Program korzysta głównie z biblioteki Swing oraz bibliotek podstawowych, `LocalDate` i rozszerza `Exception`. Swing pozwala uruchamiać program na różnych platformach, back-end w żaden sposób nie zależy od systemu. Jedynym wymaganiem jest zainstalowanie podstawowej maszyny wirtualnej Java.
+Niemniej jednak, Makefile działa dla linuksowego programu make, a cały projekt testowany był tylko pod platformą Ubuntu 20.04 LTS.
 
 ### Diagram klas
 
