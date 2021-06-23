@@ -1,0 +1,118 @@
+\begin{theindex}
+
+  \item {addBook}, \hyperpage{5}
+  \item {addReader}, \hyperpage{6}
+    \subitem {library.ReaderBase}, \hyperpage{20}
+  \item {addToBookset}
+    \subitem {library.Bookset}, \hyperpage{12}
+
+  \indexspace
+
+  \item {Book}
+    \subitem {library.Bookset.Book}, \hyperpage{8}
+  \item {Booklist}, \hyperpage{9}
+  \item {bookLookupByTitle}
+    \subitem {library.Bookset}, \hyperpage{12}
+  \item {bookRentReturn}, \hyperpage{10}
+
+  \indexspace
+
+  \item {Database}
+    \subitem {library.Database}, \hyperpage{13}
+  \item {Debtorlist}, \hyperpage{14}
+
+  \indexspace
+
+  \item {editBookentry}
+    \subitem {library.Bookset.Book}, \hyperpage{8}
+
+  \indexspace
+
+  \item {findBookInRents}
+    \subitem {library.ReaderBase.Reader}, \hyperpage{18}
+
+  \indexspace
+
+  \item {generateRandomDatabase}
+    \subitem {Home}, \hyperpage{16}
+  \item {getBooks}
+    \subitem {library.Database}, \hyperpage{13}
+  \item {getListOfDebtors}
+    \subitem {library.ReaderBase}, \hyperpage{20}
+  \item {getReader}
+    \subitem {library.ReaderBase}, \hyperpage{20}
+  \item {getReaders}
+    \subitem {library.Database}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Home}, \hyperpage{15}
+    \subitem {generateRandomDatabase}, \hyperpage{16}
+
+  \indexspace
+
+  \item {isAvailableToRent}
+    \subitem {library.Bookset.Book}, \hyperpage{8}
+
+  \indexspace
+
+  \item {library.Bookset}, \hyperpage{11}
+    \subitem {addToBookset}, \hyperpage{12}
+    \subitem {bookLookupByTitle}, \hyperpage{12}
+    \subitem {removeFromBookset}, \hyperpage{12}
+  \item {library.Bookset.Book}, \hyperpage{7}
+    \subitem {Book}, \hyperpage{8}
+    \subitem {editBookentry}, \hyperpage{8}
+    \subitem {isAvailableToRent}, \hyperpage{8}
+    \subitem {removeBook}, \hyperpage{8}
+    \subitem {setRent}, \hyperpage{9}
+  \item {library.Database}, \hyperpage{13}
+    \subitem {Database}, \hyperpage{13}
+    \subitem {getBooks}, \hyperpage{13}
+    \subitem {getReaders}, \hyperpage{14}
+    \subitem {readData}, \hyperpage{14}
+    \subitem {writeData}, \hyperpage{14}
+  \item {library.ReaderBase}, \hyperpage{19}
+    \subitem {addReader}, \hyperpage{20}
+    \subitem {getListOfDebtors}, \hyperpage{20}
+    \subitem {getReader}, \hyperpage{20}
+    \subitem {readerLookupBySurname}, \hyperpage{20}
+  \item {library.ReaderBase.Reader}, \hyperpage{17}
+    \subitem {findBookInRents}, \hyperpage{18}
+    \subitem {rentBook}, \hyperpage{18}
+    \subitem {returnBook}, \hyperpage{18}
+  \item {library.ReaderBase.Rent}, \hyperpage{23}
+    \subitem {prolongRent}, \hyperpage{24}
+
+  \indexspace
+
+  \item {prolongRent}
+    \subitem {library.ReaderBase.Rent}, \hyperpage{24}
+
+  \indexspace
+
+  \item {readData}
+    \subitem {library.Database}, \hyperpage{14}
+  \item {Readerlist}, \hyperpage{21}
+  \item {readerLookupBySurname}
+    \subitem {library.ReaderBase}, \hyperpage{20}
+  \item {removeBook}, \hyperpage{22}
+    \subitem {library.Bookset.Book}, \hyperpage{8}
+  \item {removeFromBookset}
+    \subitem {library.Bookset}, \hyperpage{12}
+  \item {rentBook}
+    \subitem {library.ReaderBase.Reader}, \hyperpage{18}
+  \item {returnBook}
+    \subitem {library.ReaderBase.Reader}, \hyperpage{18}
+
+  \indexspace
+
+  \item {setRent}
+    \subitem {library.Bookset.Book}, \hyperpage{9}
+
+  \indexspace
+
+  \item {writeData}
+    \subitem {library.Database}, \hyperpage{14}
+
+\end{theindex}

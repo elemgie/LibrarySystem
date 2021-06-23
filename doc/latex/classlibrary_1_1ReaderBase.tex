@@ -1,0 +1,81 @@
+\hypertarget{classlibrary_1_1ReaderBase}{}\doxysection{library.\+Reader\+Base Class Reference}
+\label{classlibrary_1_1ReaderBase}\index{library.ReaderBase@{library.ReaderBase}}
+
+
+Inheritance diagram for library.\+Reader\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classlibrary_1_1ReaderBase__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for library.\+Reader\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=188pt]{classlibrary_1_1ReaderBase__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Reader}{Reader}}
+\item 
+class \mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Rent}{Rent}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classlibrary_1_1ReaderBase_ae96e33491d6205132b2e2404206624e5}{add\+Reader}} (String name, String surname, int phone\+Number)
+\item 
+Array\+List$<$ \mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Reader}{Reader}} $>$ \mbox{\hyperlink{classlibrary_1_1ReaderBase_a974ce5dbd37b72c51c92da863635f448}{get\+List\+Of\+Debtors}} ()
+\item 
+Array\+List$<$ \mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Reader}{Reader}} $>$ \mbox{\hyperlink{classlibrary_1_1ReaderBase_aafd168eb23ac254babc5f6fedf2e4b58}{reader\+Lookup\+By\+Surname}} (String surname\+Prefix)
+\item 
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_a34c50ba5088937618c79421dc577cdb7}\label{classlibrary_1_1ReaderBase_a34c50ba5088937618c79421dc577cdb7}} 
+int {\bfseries get\+Size} ()
+\item 
+\mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Reader}{Reader}} \mbox{\hyperlink{classlibrary_1_1ReaderBase_ad4b5e76279c1e69c97fa174615699cde}{get\+Reader}} (int id)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Redaers\textquotesingle{} database 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_ae96e33491d6205132b2e2404206624e5}\label{classlibrary_1_1ReaderBase_ae96e33491d6205132b2e2404206624e5}} 
+\index{library.ReaderBase@{library.ReaderBase}!addReader@{addReader}}
+\index{addReader@{addReader}!library.ReaderBase@{library.ReaderBase}}
+\doxysubsubsection{\texorpdfstring{addReader()}{addReader()}}
+{\footnotesize\ttfamily void library.\+Reader\+Base.\+add\+Reader (\begin{DoxyParamCaption}\item[{String}]{name,  }\item[{String}]{surname,  }\item[{int}]{phone\+Number }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Allows to add a reader into the database \mbox{\Hypertarget{classlibrary_1_1ReaderBase_a974ce5dbd37b72c51c92da863635f448}\label{classlibrary_1_1ReaderBase_a974ce5dbd37b72c51c92da863635f448}} 
+\index{library.ReaderBase@{library.ReaderBase}!getListOfDebtors@{getListOfDebtors}}
+\index{getListOfDebtors@{getListOfDebtors}!library.ReaderBase@{library.ReaderBase}}
+\doxysubsubsection{\texorpdfstring{getListOfDebtors()}{getListOfDebtors()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Reader}{Reader}}$>$ library.\+Reader\+Base.\+get\+List\+Of\+Debtors (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Creates list of people who missed the deadline to return the book they rented \mbox{\Hypertarget{classlibrary_1_1ReaderBase_ad4b5e76279c1e69c97fa174615699cde}\label{classlibrary_1_1ReaderBase_ad4b5e76279c1e69c97fa174615699cde}} 
+\index{library.ReaderBase@{library.ReaderBase}!getReader@{getReader}}
+\index{getReader@{getReader}!library.ReaderBase@{library.ReaderBase}}
+\doxysubsubsection{\texorpdfstring{getReader()}{getReader()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Reader}{Reader}} library.\+Reader\+Base.\+get\+Reader (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Returns reader specified by an ID (counting from 1) \mbox{\Hypertarget{classlibrary_1_1ReaderBase_aafd168eb23ac254babc5f6fedf2e4b58}\label{classlibrary_1_1ReaderBase_aafd168eb23ac254babc5f6fedf2e4b58}} 
+\index{library.ReaderBase@{library.ReaderBase}!readerLookupBySurname@{readerLookupBySurname}}
+\index{readerLookupBySurname@{readerLookupBySurname}!library.ReaderBase@{library.ReaderBase}}
+\doxysubsubsection{\texorpdfstring{readerLookupBySurname()}{readerLookupBySurname()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Reader}{Reader}}$>$ library.\+Reader\+Base.\+reader\+Lookup\+By\+Surname (\begin{DoxyParamCaption}\item[{String}]{surname\+Prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Searches for readers with surnames starting with given prefix \begin{DoxyReturn}{Returns}
+Array\+List$<$\+Book$>$ of matching books 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/library/Reader\+Base.\+java\end{DoxyCompactItemize}

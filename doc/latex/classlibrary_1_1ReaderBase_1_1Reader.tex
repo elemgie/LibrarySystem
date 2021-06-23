@@ -1,0 +1,87 @@
+\hypertarget{classlibrary_1_1ReaderBase_1_1Reader}{}\doxysection{library.\+Reader\+Base.\+Reader Class Reference}
+\label{classlibrary_1_1ReaderBase_1_1Reader}\index{library.ReaderBase.Reader@{library.ReaderBase.Reader}}
+
+
+Inheritance diagram for library.\+Reader\+Base.\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classlibrary_1_1ReaderBase_1_1Reader__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for library.\+Reader\+Base.\+Reader\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classlibrary_1_1ReaderBase_1_1Reader__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_adf49ad26e2c4059e141d3569134ccb46}\label{classlibrary_1_1ReaderBase_1_1Reader_adf49ad26e2c4059e141d3569134ccb46}} 
+{\bfseries Reader} (int id, String name, String surname, int phone\+Number)
+\item 
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_a544e4d76b5286f9056a2defcac9c752f}\label{classlibrary_1_1ReaderBase_1_1Reader_a544e4d76b5286f9056a2defcac9c752f}} 
+int {\bfseries get\+ID} ()
+\item 
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_a3e52b5ba56f8daf626c1f69d5564b4d4}\label{classlibrary_1_1ReaderBase_1_1Reader_a3e52b5ba56f8daf626c1f69d5564b4d4}} 
+void {\bfseries set\+Name} (String name)
+\item 
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_a5664918a27d09457e61fcb671fe43c32}\label{classlibrary_1_1ReaderBase_1_1Reader_a5664918a27d09457e61fcb671fe43c32}} 
+String {\bfseries get\+Name} ()
+\item 
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_a1313939afd86a648127b42cd03b26434}\label{classlibrary_1_1ReaderBase_1_1Reader_a1313939afd86a648127b42cd03b26434}} 
+String {\bfseries get\+Surname} ()
+\item 
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_adff69ee370deafe2dc1d5d6d578e2334}\label{classlibrary_1_1ReaderBase_1_1Reader_adff69ee370deafe2dc1d5d6d578e2334}} 
+int {\bfseries get\+Phone\+Number} ()
+\item 
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_a1b1920264265fc124be7ba523fead6b9}\label{classlibrary_1_1ReaderBase_1_1Reader_a1b1920264265fc124be7ba523fead6b9}} 
+int {\bfseries get\+Number\+Of\+Rents} ()
+\item 
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_a26cf6f7655fdd0ec7c8aa67c4a2085e0}\label{classlibrary_1_1ReaderBase_1_1Reader_a26cf6f7655fdd0ec7c8aa67c4a2085e0}} 
+void {\bfseries set\+Surname} (String surname)
+\item 
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_a1ff459dfdcd362179608f24798990b8c}\label{classlibrary_1_1ReaderBase_1_1Reader_a1ff459dfdcd362179608f24798990b8c}} 
+void {\bfseries set\+Phone\+Number} (int phone\+Number)
+\item 
+\mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Rent}{Rent}} \mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Reader_a1df044ce2fa6e77a68ecda2f397a4176}{find\+Book\+In\+Rents}} (Book book)  throws Book\+Not\+Rented
+\item 
+void \mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Reader_aaeb696a04dfe309eab11d1fedc99532b}{rent\+Book}} (Book book\+To\+Rent, Local\+Date start\+Date)  throws Currently\+Rented\+Exception, Rent\+Capacity\+Achieved
+\item 
+void \mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Reader_a4cc64406951d69c048dca5a8613081cf}{return\+Book}} (Book returned\+Book)  throws Book\+Not\+Rented
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_a1df044ce2fa6e77a68ecda2f397a4176}\label{classlibrary_1_1ReaderBase_1_1Reader_a1df044ce2fa6e77a68ecda2f397a4176}} 
+\index{library.ReaderBase.Reader@{library.ReaderBase.Reader}!findBookInRents@{findBookInRents}}
+\index{findBookInRents@{findBookInRents}!library.ReaderBase.Reader@{library.ReaderBase.Reader}}
+\doxysubsubsection{\texorpdfstring{findBookInRents()}{findBookInRents()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classlibrary_1_1ReaderBase_1_1Rent}{Rent}} library.\+Reader\+Base.\+Reader.\+find\+Book\+In\+Rents (\begin{DoxyParamCaption}\item[{Book}]{book }\end{DoxyParamCaption}) throws Book\+Not\+Rented\hspace{0.3cm}{\ttfamily [inline]}}
+
+Does a lookup through specified reader\textquotesingle{}s rents in order to find there specific book \mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_aaeb696a04dfe309eab11d1fedc99532b}\label{classlibrary_1_1ReaderBase_1_1Reader_aaeb696a04dfe309eab11d1fedc99532b}} 
+\index{library.ReaderBase.Reader@{library.ReaderBase.Reader}!rentBook@{rentBook}}
+\index{rentBook@{rentBook}!library.ReaderBase.Reader@{library.ReaderBase.Reader}}
+\doxysubsubsection{\texorpdfstring{rentBook()}{rentBook()}}
+{\footnotesize\ttfamily void library.\+Reader\+Base.\+Reader.\+rent\+Book (\begin{DoxyParamCaption}\item[{Book}]{book\+To\+Rent,  }\item[{Local\+Date}]{start\+Date }\end{DoxyParamCaption}) throws Currently\+Rented\+Exception, Rent\+Capacity\+Achieved\hspace{0.3cm}{\ttfamily [inline]}}
+
+Begins rent and sets the book status as unavailable \begin{DoxySeeAlso}{See also}
+set\+Rent 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classlibrary_1_1ReaderBase_1_1Reader_a4cc64406951d69c048dca5a8613081cf}\label{classlibrary_1_1ReaderBase_1_1Reader_a4cc64406951d69c048dca5a8613081cf}} 
+\index{library.ReaderBase.Reader@{library.ReaderBase.Reader}!returnBook@{returnBook}}
+\index{returnBook@{returnBook}!library.ReaderBase.Reader@{library.ReaderBase.Reader}}
+\doxysubsubsection{\texorpdfstring{returnBook()}{returnBook()}}
+{\footnotesize\ttfamily void library.\+Reader\+Base.\+Reader.\+return\+Book (\begin{DoxyParamCaption}\item[{Book}]{returned\+Book }\end{DoxyParamCaption}) throws Book\+Not\+Rented\hspace{0.3cm}{\ttfamily [inline]}}
+
+Ends rent and enables the book to be rent 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/library/Reader\+Base.\+java\end{DoxyCompactItemize}

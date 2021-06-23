@@ -1,0 +1,86 @@
+\hypertarget{classlibrary_1_1Bookset}{}\doxysection{library.\+Bookset Class Reference}
+\label{classlibrary_1_1Bookset}\index{library.Bookset@{library.Bookset}}
+
+
+Inheritance diagram for library.\+Bookset\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classlibrary_1_1Bookset__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for library.\+Bookset\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classlibrary_1_1Bookset__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classlibrary_1_1Bookset_1_1Book}{Book}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classlibrary_1_1Bookset_aab9346a9bf9e60c50f8f8f2d7139dfba}{add\+To\+Bookset}} (String title, String author, String publisher, int publication\+Year, int value)
+\item 
+void \mbox{\hyperlink{classlibrary_1_1Bookset_af0a0b927457e6d65e30d277ce29da1a8}{remove\+From\+Bookset}} (int id)  throws Currently\+Rented\+Exception
+\item 
+\mbox{\Hypertarget{classlibrary_1_1Bookset_ac5357614f807cd10c5bfc8c1bd8f5f46}\label{classlibrary_1_1Bookset_ac5357614f807cd10c5bfc8c1bd8f5f46}} 
+int {\bfseries get\+Number\+Of\+Active\+Books} ()
+\item 
+\mbox{\Hypertarget{classlibrary_1_1Bookset_ae828f4b41a264299d4db8416e4bc4871}\label{classlibrary_1_1Bookset_ae828f4b41a264299d4db8416e4bc4871}} 
+\mbox{\hyperlink{classlibrary_1_1Bookset_1_1Book}{Book}} {\bfseries get\+Book} (int id)
+\item 
+Array\+List$<$ \mbox{\hyperlink{classlibrary_1_1Bookset_1_1Book}{Book}} $>$ \mbox{\hyperlink{classlibrary_1_1Bookset_acd9c5a97cca1cd8483922fe2c154dc97}{book\+Lookup\+By\+Title}} (String title\+Prefix)
+\item 
+\mbox{\Hypertarget{classlibrary_1_1Bookset_a1b177a816ca2ded05e4897c891519f25}\label{classlibrary_1_1Bookset_a1b177a816ca2ded05e4897c891519f25}} 
+int {\bfseries get\+Size} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represent books\textquotesingle{} database 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classlibrary_1_1Bookset_aab9346a9bf9e60c50f8f8f2d7139dfba}\label{classlibrary_1_1Bookset_aab9346a9bf9e60c50f8f8f2d7139dfba}} 
+\index{library.Bookset@{library.Bookset}!addToBookset@{addToBookset}}
+\index{addToBookset@{addToBookset}!library.Bookset@{library.Bookset}}
+\doxysubsubsection{\texorpdfstring{addToBookset()}{addToBookset()}}
+{\footnotesize\ttfamily int library.\+Bookset.\+add\+To\+Bookset (\begin{DoxyParamCaption}\item[{String}]{title,  }\item[{String}]{author,  }\item[{String}]{publisher,  }\item[{int}]{publication\+Year,  }\item[{int}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Adds book to the bookset \begin{DoxyReturn}{Returns}
+Unique book\textquotesingle{}s ID in the bookset 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlibrary_1_1Bookset_acd9c5a97cca1cd8483922fe2c154dc97}\label{classlibrary_1_1Bookset_acd9c5a97cca1cd8483922fe2c154dc97}} 
+\index{library.Bookset@{library.Bookset}!bookLookupByTitle@{bookLookupByTitle}}
+\index{bookLookupByTitle@{bookLookupByTitle}!library.Bookset@{library.Bookset}}
+\doxysubsubsection{\texorpdfstring{bookLookupByTitle()}{bookLookupByTitle()}}
+{\footnotesize\ttfamily Array\+List$<$\mbox{\hyperlink{classlibrary_1_1Bookset_1_1Book}{Book}}$>$ library.\+Bookset.\+book\+Lookup\+By\+Title (\begin{DoxyParamCaption}\item[{String}]{title\+Prefix }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Searches for books with titles starting with given prefix \begin{DoxyReturn}{Returns}
+Array\+List$<$\+Book$>$ of matching books 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classlibrary_1_1Bookset_af0a0b927457e6d65e30d277ce29da1a8}\label{classlibrary_1_1Bookset_af0a0b927457e6d65e30d277ce29da1a8}} 
+\index{library.Bookset@{library.Bookset}!removeFromBookset@{removeFromBookset}}
+\index{removeFromBookset@{removeFromBookset}!library.Bookset@{library.Bookset}}
+\doxysubsubsection{\texorpdfstring{removeFromBookset()}{removeFromBookset()}}
+{\footnotesize\ttfamily void library.\+Bookset.\+remove\+From\+Bookset (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) throws Currently\+Rented\+Exception\hspace{0.3cm}{\ttfamily [inline]}}
+
+Disables book\textquotesingle{}s ability to be rented \begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classremoveBook}{remove\+Book()}} Decrements number of active books in bookset leaving books\textquotesingle{} positions in database intact 
+\end{DoxySeeAlso}
+\begin{DoxyWarning}{Warning}
+Doesn\textquotesingle{}t remove book\textquotesingle{}s data from database 
+\end{DoxyWarning}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/library/Bookset.\+java\end{DoxyCompactItemize}

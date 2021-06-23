@@ -1,0 +1,12 @@
+<map id="bookRentReturn" name="bookRentReturn">
+<area shape="rect" id="node1" title=" " alt="" coords="147,364,274,391"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,178,72,205"/>
+<area shape="rect" id="node4" href="$classBooklist.html" title=" " alt="" coords="231,275,305,301"/>
+<area shape="rect" id="node3" title=" " alt="" coords="96,178,211,205"/>
+<area shape="rect" id="node5" href="$classlibrary_1_1Database.html" title=" " alt="" coords="648,178,776,205"/>
+<area shape="rect" id="node6" href="$classlibrary_1_1Bookset.html" title=" " alt="" coords="565,81,683,108"/>
+<area shape="rect" id="node7" title=" " alt="" coords="652,5,751,32"/>
+<area shape="rect" id="node8" href="$classlibrary_1_1ReaderBase.html" title=" " alt="" coords="708,81,852,108"/>
+<area shape="rect" id="node9" title=" " alt="" coords="235,178,379,205"/>
+<area shape="rect" id="node10" title=" " alt="" coords="403,171,623,212"/>
+</map>

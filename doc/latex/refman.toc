@@ -1,0 +1,57 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}Class Documentation}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Book Class Reference}{5}{section.3.1}%
+\contentsline {section}{\numberline {3.2}add\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reader Class Reference}{6}{section.3.2}%
+\contentsline {section}{\numberline {3.3}library.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bookset.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Book Class Reference}{7}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Detailed Description}{7}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Constructor \& Destructor Documentation}{8}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Book()}{8}{subsubsection.3.3.2.1}%
+\contentsline {subsection}{\numberline {3.3.3}Member Function Documentation}{8}{subsection.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.1}editBookentry()}{8}{subsubsection.3.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.3.2}isAvailableToRent()}{8}{subsubsection.3.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3.3}removeBook()}{9}{subsubsection.3.3.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.3.4}setRent()}{9}{subsubsection.3.3.3.4}%
+\contentsline {section}{\numberline {3.4}Booklist Class Reference}{9}{section.3.4}%
+\contentsline {section}{\numberline {3.5}book\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rent\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Return Class Reference}{10}{section.3.5}%
+\contentsline {section}{\numberline {3.6}library.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bookset Class Reference}{11}{section.3.6}%
+\contentsline {subsection}{\numberline {3.6.1}Detailed Description}{11}{subsection.3.6.1}%
+\contentsline {subsection}{\numberline {3.6.2}Member Function Documentation}{12}{subsection.3.6.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.1}addToBookset()}{12}{subsubsection.3.6.2.1}%
+\contentsline {subsubsection}{\numberline {3.6.2.2}bookLookupByTitle()}{12}{subsubsection.3.6.2.2}%
+\contentsline {subsubsection}{\numberline {3.6.2.3}removeFromBookset()}{12}{subsubsection.3.6.2.3}%
+\contentsline {section}{\numberline {3.7}library.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Database Class Reference}{13}{section.3.7}%
+\contentsline {subsection}{\numberline {3.7.1}Detailed Description}{13}{subsection.3.7.1}%
+\contentsline {subsection}{\numberline {3.7.2}Constructor \& Destructor Documentation}{13}{subsection.3.7.2}%
+\contentsline {subsubsection}{\numberline {3.7.2.1}Database()}{13}{subsubsection.3.7.2.1}%
+\contentsline {subsection}{\numberline {3.7.3}Member Function Documentation}{13}{subsection.3.7.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.1}getBooks()}{14}{subsubsection.3.7.3.1}%
+\contentsline {subsubsection}{\numberline {3.7.3.2}getReaders()}{14}{subsubsection.3.7.3.2}%
+\contentsline {subsubsection}{\numberline {3.7.3.3}readData()}{14}{subsubsection.3.7.3.3}%
+\contentsline {subsubsection}{\numberline {3.7.3.4}writeData()}{14}{subsubsection.3.7.3.4}%
+\contentsline {section}{\numberline {3.8}Debtorlist Class Reference}{14}{section.3.8}%
+\contentsline {section}{\numberline {3.9}Home Class Reference}{15}{section.3.9}%
+\contentsline {subsection}{\numberline {3.9.1}Member Function Documentation}{16}{subsection.3.9.1}%
+\contentsline {subsubsection}{\numberline {3.9.1.1}generateRandomDatabase()}{16}{subsubsection.3.9.1.1}%
+\contentsline {section}{\numberline {3.10}library.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reader\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reader Class Reference}{17}{section.3.10}%
+\contentsline {subsection}{\numberline {3.10.1}Member Function Documentation}{18}{subsection.3.10.1}%
+\contentsline {subsubsection}{\numberline {3.10.1.1}findBookInRents()}{18}{subsubsection.3.10.1.1}%
+\contentsline {subsubsection}{\numberline {3.10.1.2}rentBook()}{18}{subsubsection.3.10.1.2}%
+\contentsline {subsubsection}{\numberline {3.10.1.3}returnBook()}{18}{subsubsection.3.10.1.3}%
+\contentsline {section}{\numberline {3.11}library.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reader\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base Class Reference}{19}{section.3.11}%
+\contentsline {subsection}{\numberline {3.11.1}Detailed Description}{19}{subsection.3.11.1}%
+\contentsline {subsection}{\numberline {3.11.2}Member Function Documentation}{20}{subsection.3.11.2}%
+\contentsline {subsubsection}{\numberline {3.11.2.1}addReader()}{20}{subsubsection.3.11.2.1}%
+\contentsline {subsubsection}{\numberline {3.11.2.2}getListOfDebtors()}{20}{subsubsection.3.11.2.2}%
+\contentsline {subsubsection}{\numberline {3.11.2.3}getReader()}{20}{subsubsection.3.11.2.3}%
+\contentsline {subsubsection}{\numberline {3.11.2.4}readerLookupBySurname()}{20}{subsubsection.3.11.2.4}%
+\contentsline {section}{\numberline {3.12}Readerlist Class Reference}{21}{section.3.12}%
+\contentsline {section}{\numberline {3.13}remove\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Book Class Reference}{22}{section.3.13}%
+\contentsline {section}{\numberline {3.14}library.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Reader\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base.\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Rent Class Reference}{23}{section.3.14}%
+\contentsline {subsection}{\numberline {3.14.1}Detailed Description}{23}{subsection.3.14.1}%
+\contentsline {subsection}{\numberline {3.14.2}Member Function Documentation}{24}{subsection.3.14.2}%
+\contentsline {subsubsection}{\numberline {3.14.2.1}prolongRent()}{24}{subsubsection.3.14.2.1}%
+\contentsline {chapter}{Index}{25}{section*.45}%
