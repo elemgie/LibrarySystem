@@ -1,5 +1,5 @@
 SRC = ./src/library \
-./src \	
+./src
 DST = ./build
 MAIN = Home
 
